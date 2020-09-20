@@ -12,7 +12,9 @@ export default (config, options, targetOptions) => {
       rule.use &&
       rule.use.find(
         (it) =>
-          it.loader && it.loader.includes('@angular-devkit\\build-optimizer')
+          it.loader &&
+          (it.loader.includes('@angular-devkit\\build-optimizer') ||
+            it.loader.includes('@angular-devkit/build-optimizer'))
       )
   );
   console.log(loaders.length);
