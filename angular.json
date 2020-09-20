@@ -48,6 +48,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "baseHref": "/ng-monaco-textmate/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
